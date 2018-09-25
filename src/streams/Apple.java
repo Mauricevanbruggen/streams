@@ -1,3 +1,5 @@
+package streams;
+
 public class Apple {
     /**
      * streams tutorial
@@ -27,7 +29,7 @@ public class Apple {
     }
 
     public String toString() {
-        return "Apple: " +
+        return "streams.Apple: " +
                 " color: " + getColor() +
                 ", weight: " + getWeight();
     }

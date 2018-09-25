@@ -1,3 +1,5 @@
+package streams;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,4 +40,6 @@ public class AppleMain {
         }
         return res;
     }
+
+    public static void printAppleList(List <Apple> inv, )
 }
