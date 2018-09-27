@@ -41,5 +41,9 @@ public class AppleMain {
         return res;
     }
 
-    public static void printAppleList(List <Apple> inv, )
+    public static void printAppleList(List <Apple> inv, ApplePredicate pred) {
+        for(Apple apple : inv) {
+            String out =
+        }
+    }
 }
