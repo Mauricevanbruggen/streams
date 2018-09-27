@@ -27,8 +27,9 @@ public class AppleMain {
         testList.add(apple7);
         testList.add(apple8);
         filterApple(testList, green);
-        System.out.println(testList);
-        System.out.println(filterApple(testList, weight));
+        printAppleList(testList, new AppleFancy());
+        printAppleList(testList, new AppleSimple());
+
     }
 
     public static List <Apple> filterApple(List <Apple> inv , ApplePredicate pred ) {
@@ -41,9 +42,10 @@ public class AppleMain {
         return res;
     }
 
-    public static void printAppleList(List <Apple> inv, ApplePredicate pred) {
+    public static void printAppleList(List <Apple> inv, AppleFormat format) {
         for(Apple apple : inv) {
-            String out =
+            String out = format.accept(apple);
+            System.out.println(out);
         }
     }
 }
