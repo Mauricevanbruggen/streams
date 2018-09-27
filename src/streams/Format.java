@@ -1,5 +1,5 @@
 package streams;
 
-public interface AppleFormat {
-    String accept(Apple apple);
+public interface Format<T> {
+    String accept(T t);
 }
