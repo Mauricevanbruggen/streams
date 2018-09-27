@@ -3,25 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7d6da07b-c10b-4a68-abd3-7695b0d97bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AbstrPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleFancy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleGreenColorPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleHeavyWeightPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/ApplePredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/streamsTut/streams/AppleWeightPredicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AbstrPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/streams/TestPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleFancy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/streams/Format.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleGreenColorPredicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleHeavyWeightPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch3/ExecuteAround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch3/ExecuteAround.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/streams/AppleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/streams/AppleMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/ApplePredicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleSimple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/AppleWeightPredicate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/streams/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/streams/Predicate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,22 +25,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="java" value="20" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="20" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4578" />
+          <entry key="java" value="4805" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4578" />
+          <entry key="JAVA" value="4805" />
         </counts>
       </usages-collector>
     </session>
@@ -65,19 +50,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/Apple.java">
+        <entry file="file://$PROJECT_DIR$/src/ch3/Lambdas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="18" column="95" lean-forward="true" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1672#1673#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/TestPredicate.java">
+        <entry file="file://$PROJECT_DIR$/src/ch3/Sorting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="748">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1966#1967#0" expanded="true" />
+                <element signature="e#2002#2003#0" expanded="true" />
+                <element signature="e#2048#2049#0" expanded="true" />
+                <element signature="e#2090#2091#0" expanded="true" />
+                <element signature="e#2400#2401#0" expanded="true" />
+                <element signature="e#2471#2472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch3/ExecuteAround.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,10 +106,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/AcceptStringPredicate.java">
+        <entry file="file://$PROJECT_DIR$/src/ch3/data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="68">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -98,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/src/streams/AppleMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,8 +176,12 @@
         <option value="$PROJECT_DIR$/src/streams/AppleSimple.java" />
         <option value="$PROJECT_DIR$/src/streams/Format.java" />
         <option value="$PROJECT_DIR$/src/streams/TestPredicate.java" />
-        <option value="$PROJECT_DIR$/src/streams/AppleMain.java" />
         <option value="$PROJECT_DIR$/src/streams/AcceptStringPredicate.java" />
+        <option value="$PROJECT_DIR$/src/ch3/Lambdas.java" />
+        <option value="$PROJECT_DIR$/src/ch3/Sorting.java" />
+        <option value="$PROJECT_DIR$/src/data.txt" />
+        <option value="$PROJECT_DIR$/src/ch3/ExecuteAround.java" />
+        <option value="$PROJECT_DIR$/src/streams/AppleMain.java" />
       </list>
     </option>
   </component>
@@ -196,13 +220,13 @@
             <path>
               <item name="streamsTut" type="b2602c69:ProjectViewProjectNode" />
               <item name="streamsTut" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="streamsTut" type="b2602c69:ProjectViewProjectNode" />
               <item name="streamsTut" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ch3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="streamsTut" type="b2602c69:ProjectViewProjectNode" />
@@ -222,9 +246,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538048565797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538060070147" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Symbaloo\Documents\SpringTut\streamsTut\src\ch3" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -238,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AppleMain">
     <configuration name="AppleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="streams.AppleMain" />
       <module name="streamsTut" />
@@ -246,9 +275,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExecuteAround" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch3.ExecuteAround" />
+      <module name="streamsTut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lambdas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch3.Lambdas" />
+      <module name="streamsTut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch3.Sorting" />
+      <module name="streamsTut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppleMain" />
+      <item itemvalue="Application.Lambdas" />
+      <item itemvalue="Application.Sorting" />
+      <item itemvalue="Application.ExecuteAround" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppleMain" />
+        <item itemvalue="Application.Lambdas" />
+        <item itemvalue="Application.ExecuteAround" />
+        <item itemvalue="Application.Sorting" />
       </list>
     </recent_temporary>
   </component>
@@ -263,12 +340,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537887467348</updated>
       <workItem from="1537887472189" duration="5569000" />
-      <workItem from="1538033173757" duration="14975000" />
+      <workItem from="1538033173757" duration="22276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20544000" />
+    <option name="totallyTimeSpent" value="27845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1915" y="1" width="1931" height="1050" extended-state="0" />
@@ -372,10 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/streams/Apple.java">
+    <entry file="file://$PROJECT_DIR$/src/streams/Format.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -386,17 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/streams/Format.java">
+    <entry file="file://$PROJECT_DIR$/src/streams/Apple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/streams/AcceptStringPredicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -410,10 +480,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/streams/AcceptStringPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch3/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch3/Lambdas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="95" lean-forward="true" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch3/ExecuteAround.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch3/Sorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2400#2401#0" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/streams/AppleMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

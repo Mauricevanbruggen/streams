@@ -13,12 +13,12 @@ public class AppleMain  {
         List<Apple> inventory =  Arrays.asList(new Apple("green", 80),
                                                     new Apple("green", 155),
                                                     new Apple("red", 120));
-
+        Runnable r = () -> {System.out.println("------------------");};
         printStuff(inventory, (Apple apple) -> apple.toString());
-        System.out.println("------------------");
+        r.run();
         List<Apple> redApples = filter(inventory, (Apple apple) -> "red".equals(apple.getColor()));
         printStuff(redApples, (Apple apple) -> (redApples.toString()));
-        System.out.println("------------------");
+        r.run();
         List<Apple> heavyApples = filter(inventory, (Apple apple) -> 150 < apple.getWeight());
         printStuff(heavyApples, (Apple apple) -> (heavyApples.toString()));
     }

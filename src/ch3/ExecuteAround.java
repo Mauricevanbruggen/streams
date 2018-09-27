@@ -23,14 +23,14 @@ public class ExecuteAround {
 
     public static String processFileLimited() throws IOException {
         try (BufferedReader br =
-                     new BufferedReader(new FileReader("lambdasinaction/chap3/data.txt"))) {
+                     new BufferedReader(new FileReader("C:\\Users\\Symbaloo\\Documents\\SpringTut\\streamsTut\\src\\ch3\\data.txt"))) {
             return br.readLine();
         }
     }
 
 
     public static String processFile(BufferedReaderProcessor p) throws IOException {
-        try(BufferedReader br = new BufferedReader(new FileReader("lambdasinaction/chap3/data.txt"))){
+        try(BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Symbaloo\\Documents\\SpringTut\\streamsTut\\src\\ch3\\data.txt"))){
             return p.process(br);
         }
 
