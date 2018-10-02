@@ -1,5 +1,7 @@
 package ch4;
 
+import streams.Predicate;
+
 import java.lang.reflect.Type;
 
 public class Dish {
@@ -37,6 +39,8 @@ public class Dish {
     public String toString() {
         return name;
     }
+
+
 
     public enum Type { MEAT, FISH, OTHER}
 }
