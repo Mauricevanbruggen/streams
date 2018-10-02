@@ -62,7 +62,7 @@ public class Restaurant {
         }
         boolean isHealthy = menu.stream()
                 .noneMatch(d -> d.getCalories() > 10000 );
-        System.out.println("isHealty " + isHealthy);
+ //       System.out.println("isHealty " + isHealthy);
 
 
         // using negation on boolean function
@@ -81,8 +81,8 @@ public class Restaurant {
                 .flatMap(Arrays::stream)
               //  .distinct()
                 .collect(toList());
-        System.out.println("words: " + words);
-        System.out.println("unique: " + uniqueWords);
+ //       System.out.println("words: " + words);
+ //      System.out.println("unique: " + uniqueWords);
 
         List<Integer> nmbs = Arrays.asList(1,2,3,4,5,6);
 
@@ -91,7 +91,7 @@ public class Restaurant {
         .map(n -> n*n)
         .collect(toList());
 
-        System.out.println(squares);
+    //    System.out.println(squares);
 
         List<Integer> set1 = Arrays.asList(1,2,3);
         List<Integer> set2 = Arrays.asList(3,4);
@@ -104,6 +104,24 @@ public class Restaurant {
                         .map(j -> new int[] {i,j})
             )
             .collect(toList());
-        System.out.println(pairs);
+     //   System.out.println(pairs);
+        List<Integer> someNumbers = Arrays.asList(1,4,6,12,2,6,7);
+        Optional<Integer> firstDivByEight =
+                someNumbers.stream()
+                .filter(x -> x % 2 == 0)
+                .findAny();
+
+
+
+    //   System.out.println("firstdiv: " + firstDivByEight);
+        List<Integer> numbers2 = Arrays.asList(2, 3, 6, 1, 5, 8, 10);
+        Optional<Integer> maxNumb = numbers2.stream().reduce((a, b) -> (a - b ));
+ //       System.out.println("maxNum: " + maxNumb);
+
+        int  countDish =
+        menu.stream()
+            .map( d -> 1) // map each element into number 1
+            .reduce(0, (a, b) -> a + b);
+        System.out.println(countDish);
     }
 }
