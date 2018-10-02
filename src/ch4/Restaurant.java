@@ -20,6 +20,7 @@ public class Restaurant {
                 new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("salmon", false, 450, Dish.Type.FISH));
 
+
 //        List<String> threeHighCal =
 //                menu.stream()
 //                .filter(d -> d.getCalories() > 13)
@@ -140,8 +141,11 @@ public class Restaurant {
     //    int totalCal = menu.stream().collect(summingInt(Dish::getCalories));
         double avCal = menu.stream().collect(averagingInt(Dish::getCalories));
         //using reduce with collect
-        int totalCal = menu.stream().collect(reducing(0, Dish::getCalories, Integer::sum));
-        System.out.println("total: " + totalCal);
+     //   int totalCal = menu.stream().collect(reducing(0, Dish::getCalories, Integer::sum));
+        // get total cal by mapping and reducing
+     //   int totalCal = menu.stream().map(Dish::getCalories).reduce(Integer::sum).get(); // not safe when list is empty
+        int totalCal = menu.stream().mapToInt(Dish::getCalories).sum(); // in this case the best solution
+   //     System.out.println("total: " + totalCal);
         //old fashion way
         double res = 0;
         int num = menu.size();
@@ -154,8 +158,20 @@ public class Restaurant {
                 menu.stream().collect((summarizingInt(Dish::getCalories)));
       //  System.out.println("summary stats: " + menusStats);
 
+        String shortMenu2 = menu.stream().map(Dish::getName).collect(joining());
         String shortMenu = menu.stream().map(Dish::getName).collect(joining(", "));
-        System.out.println("Shortmenu: " + shortMenu);
+     //   String shortMenu3 = menu.stream().collect( reducing(d1, d2) -> d1.getName() )).get();
+    //    System.out.println("Shortmenu: " + shortMenu2);
 
+        //Grouping
+        Map<Dish.Type, List<Dish>> dishesByType = menu.stream().collect(groupingBy(Dish::getType));
+        //System.out.println("DishesbyType: " +dishesByType);
+
+        Map<Dish.CalLevel, List<Dish>> dishesByCalLevel = menu.stream().collect(groupingBy(dish -> {
+            if (dish.getCalories() < 500) return Dish.CalLevel.DIET;
+            else if (dish.getCalories() <= 700) return Dish.CalLevel.NORMAL;
+            else return Dish.CalLevel.FATTY;
+        }));
+        System.out.println("Dishes by Calorie level: " + dishesByCalLevel);
     }
 }

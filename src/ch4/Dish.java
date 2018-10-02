@@ -10,6 +10,7 @@ public class Dish {
     private final boolean vega;
     private final int calories;
     private final Type type;
+ //   private final CalLevel calLevel;
 
 
     public Dish(String name, boolean vega, int calories, Type type) {
@@ -43,4 +44,6 @@ public class Dish {
 
 
     public enum Type { MEAT, FISH, OTHER}
+
+    public enum CalLevel {DIET, NORMAL, FATTY}
 }
