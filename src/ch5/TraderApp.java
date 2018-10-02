@@ -18,10 +18,10 @@ public class TraderApp {
                 new Transaction(mario, 2012, 700),
                 new Transaction(alan, 2012, 950)
         );
-//
-//        Stream<Transaction> trans2011Sorted =
-//                transactions.stream()
-//                .filter(year -> year.getYear() == 2011)
-//
+
+        Stream<Transaction> trans2011Sorted =
+                transactions.stream()
+                        .filter(year -> year.getYear() == 2011);
+
     }
 }
