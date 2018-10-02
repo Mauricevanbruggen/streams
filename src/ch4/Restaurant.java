@@ -2,13 +2,10 @@ package ch4;
 
 import streams.Predicate;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.*;
 
 public class Restaurant {
     public static void main(String[] args) {
@@ -19,6 +16,7 @@ public class Restaurant {
                 new Dish("rice", true, 350, Dish.Type.OTHER),
                 new Dish("season fruit", true, 120, Dish.Type.OTHER),
                 new Dish("pizza", true, 550, Dish.Type.OTHER),
+                new Dish("confit de canard", false, 1000, Dish.Type.MEAT),
                 new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("salmon", false, 450, Dish.Type.FISH));
 
@@ -128,6 +126,36 @@ public class Restaurant {
                 menu.stream()
                 .mapToInt(Dish::getCalories)
                 .sum();
-        System.out.println("Total Calories: " + countTotCalories);
+      //  System.out.println("Total Calories: " + countTotCalories);
+       // System.out.println(" number of dishes: " + menu.stream().count());
+
+        Comparator<Dish> dishCaloryComparator =
+                Comparator.comparingInt(Dish::getCalories);
+        Optional<Dish> mostCaloryDish =
+                menu.stream()
+                .collect(maxBy(dishCaloryComparator));
+   //    System.out.println("Most calory dish: " + mostCaloryDish);
+
+        // print total calories
+    //    int totalCal = menu.stream().collect(summingInt(Dish::getCalories));
+        double avCal = menu.stream().collect(averagingInt(Dish::getCalories));
+        //using reduce with collect
+        int totalCal = menu.stream().collect(reducing(0, Dish::getCalories, Integer::sum));
+        System.out.println("total: " + totalCal);
+        //old fashion way
+        double res = 0;
+        int num = menu.size();
+        for(int i = 0; i <menu.size(); i++) {
+            res +=  menu.get(i).getCalories();
+        }
+ //       System.out.println("old school: " + res/num);
+
+        IntSummaryStatistics menusStats =
+                menu.stream().collect((summarizingInt(Dish::getCalories)));
+      //  System.out.println("summary stats: " + menusStats);
+
+        String shortMenu = menu.stream().map(Dish::getName).collect(joining(", "));
+        System.out.println("Shortmenu: " + shortMenu);
+
     }
 }
