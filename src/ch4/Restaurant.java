@@ -122,6 +122,12 @@ public class Restaurant {
         menu.stream()
             .map( d -> 1) // map each element into number 1
             .reduce(0, (a, b) -> a + b);
-        System.out.println(countDish);
+       // System.out.println(countDish);
+
+        int countTotCalories =
+                menu.stream()
+                .mapToInt(Dish::getCalories)
+                .sum();
+        System.out.println("Total Calories: " + countTotCalories);
     }
 }

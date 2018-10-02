@@ -86,7 +86,24 @@ public class Trader {
                     .map(Transaction::getValue)
                     .forEach(System.out::println);
 
-            
+            Optional<Integer> highestValue =
+                    transactions.stream()
+                    .filter(t -> t.getTrader()
+                            .getName()
+                            .equals("Mario"))
+                    .map(Transaction::getValue)
+                    .reduce(Integer::min);
+            System.out.println("Lowest value by Mario: " + highestValue);
+
+            Optional<Transaction> lowestVal =
+                    transactions.stream()
+                    .reduce((t1, t2) -> t1.getValue() < t2.getValue() ? t1 : t2);
+            System.out.println("Lowest value of all transactions: " + lowestVal);
+
+            Optional<Transaction> betterIMplLow =
+                    transactions.stream()
+                    .min(comparing(Transaction::getValue));
+            System.out.println("same as before but better implmented: " + betterIMplLow);
         }
 
 
