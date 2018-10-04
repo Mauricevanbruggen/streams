@@ -46,4 +46,6 @@ public class Dish {
     public enum Type { MEAT, FISH, OTHER}
 
     public enum CalLevel {DIET, NORMAL, FATTY}
+
+    public enum isGood {GOOD, BAD}
 }
